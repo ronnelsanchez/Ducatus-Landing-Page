@@ -233,3 +233,24 @@ section {
     }
   }
 }
+
+@mixin banner-480(){
+  .banner{
+    .content{
+      .message{
+        padding-top: 0;
+      }
+    }
+  }
+};
+
+
+@mixin banner-768(){
+  .banner{
+    .content{
+      .message{
+        padding-top: 80px;
+      }
+    }
+  }
+};

@@ -5,11 +5,11 @@
 @media (min-width:375px){
 }
 @media (min-width:480px){
-
+  @include banner-480;
 }
 @media (min-width:768px){
+  @include banner-768;
   @include footer-social-768;
-
 }
 @media (min-width:992px){
   @include footer-social-992;
