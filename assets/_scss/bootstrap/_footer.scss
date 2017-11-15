@@ -1,0 +1,35 @@
+.footer {
+    font-size: 12px;
+    position: relative;
+    margin-top: 150px;
+    color: $gray-light;
+    background-color: #f6f9fc;
+    padding: 40px 0;
+  .footer-content{
+    position: relative;
+
+    a{
+      color: $gray-light;
+    }
+    .social {
+      a:hover{
+        color: $text-color;
+
+      }
+    }
+  }
+}
+
+
+// Media Queires
+@mixin footer-social-768(){
+  .social{
+    text-align: left;
+  }
+};
+
+@mixin footer-social-992(){
+  .social{
+    text-align: right;
+  }
+};

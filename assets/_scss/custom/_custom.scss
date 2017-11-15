@@ -1,0 +1,308 @@
+body{
+  margin-top: 80px;
+  position: relative;
+}
+
+
+// Default navbar
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+  overflow: hidden;
+
+  &.scroll {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+
+    .container {
+      transform: translateY(0) scale(1) !important;
+      opacity: 1 !important;
+    }
+    .navbar-brand {
+      color: #ffffff;
+      padding: 0;
+      height: 65px;
+      position: absolute;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+      -webkit-transform: translateY(-100px);
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -o-transform: translateY(-100px);
+
+      &.logo-scroll {
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+      }
+
+      &:hover,
+      &:focus {
+        color: #ffffff;
+      }
+    }
+
+    .navbar-text {
+      color: #be1e2d;
+    }
+
+    .navbar-nav {
+      > li{
+        // Active state, and its :hover to override normal :hover
+        &.divider {
+          margin: 0 10px;
+          height: 65px;
+        }
+        &.social {
+          a{
+            padding-top: 22px;
+            padding-bottom: 22px;
+            padding-left: 10px;
+            padding-right: 10px;
+            &:hover,
+            &:focus {
+              color: #be1e2d;
+              background-color: none;
+              cursor: pointer;
+            }
+          }
+
+          &:after {
+            display: none;
+          }
+        }
+
+        a{
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        &.active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: #be1e2d;
+            background-color: transparent;
+            cursor: default;
+          }
+        }
+
+        //Border bottom effect
+        &:after {
+          content: '';
+          display: block;
+          margin: auto;
+          height: 5px;
+          width: 0px;
+          background: transparent;
+        }
+
+        &.active:after{
+          width: 100%;
+          background: #be1e2d;
+        }
+        &:hover:after,
+        &:focus:after {
+          width: 100%;
+          background: rgba(190, 30, 45, .6);
+        }
+
+        > a {
+          color: rgba(0, 0, 0, 0.6);
+
+          &:hover,
+          &:focus {
+            color: #be1e2d;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: #be1e2d;
+            background-color: none;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: #666666;
+          }
+        }
+      }
+      }
+
+
+  }//End of scrol
+
+  .navbar-brand {
+    color: #ffffff;
+    padding: 0;
+    height: 65px;
+    position: absolute;
+    transition: all 0.5s ease;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+
+    &.logo-scroll {
+      transform: translateY(100px);
+      -webkit-transform: translateY(100px);
+      -moz-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+      -o-transform: translateY(100px);
+    }
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+  }
+
+  .navbar-text {
+    color: #ffffff;
+  }
+
+  .navbar-nav {
+    > li{
+      // Active state, and its :hover to override normal :hover
+      &.divider {
+        margin: 0 10px;
+        height: 65px;
+      }
+      &.social {
+        a{
+          padding-top: 22px;
+          padding-bottom: 22px;
+          padding-left: 10px;
+          padding-right: 10px;
+          &:hover,
+          &:focus {
+            color: #ffffff;
+            background-color: transparent;
+            cursor: pointer;
+          }
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+      a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      &.active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #ffffff;
+          background-color: transparent;
+          cursor: default;
+        }
+      }
+
+      //Border bottom effect
+      &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 5px;
+        width: 0px;
+        background: transparent;
+      }
+
+      &.active:after{
+        width: 100%;
+        background: #ffffff;
+      }
+      &:hover:after,
+      &:focus:after {
+        width: 100%;
+        background: rgba(255, 255, 255, .8);
+      }
+
+      > a {
+        color: rgba(255, 255, 255, .8);
+
+        &:hover,
+        &:focus {
+          color: #ffffff;
+          background: rgba(255, 255, 255, .2);
+
+        }
+      }
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #ffffff;
+          background-color: none;
+        }
+      }
+      > .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          color: #666666;
+        }
+      }
+    }
+    }
+}
+
+
+
+// Media Queires
+@mixin navbar-brand-320(){
+  .navbar-default{
+    .navbar-brand{
+      img{
+        max-width: 91px;
+      }
+    }
+  }
+};
+
+@mixin navbar-brand-375(){
+  .navbar-default{
+    .navbar-brand{
+      img{
+        max-width: 91px;
+      }
+    }
+  }
+};
+
+@mixin navbar-brand-480(){
+  .navbar-default{
+    .navbar-brand{
+      img{
+        max-width: 91px;
+      }
+    }
+  }
+};
+
+
+@mixin navbar-brand-768(){
+  .navbar-default{
+    .navbar-brand{
+      img{
+        max-width: 115px;
+      }
+    }
+  }
+};
