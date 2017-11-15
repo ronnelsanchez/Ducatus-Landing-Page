@@ -1,3 +1,4 @@
+
 $(window).scroll(function () {
   if ($(window).scrollTop() > 1) {
     $('header').addClass('scroll');
@@ -20,6 +21,7 @@ $(function() {
       }
     }
   });
+
 });
 
 window.sr = ScrollReveal();
