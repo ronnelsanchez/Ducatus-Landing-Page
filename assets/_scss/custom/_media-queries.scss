@@ -1,15 +1,15 @@
 
 @media (min-width:320px){
-  @include navbar-brand-320;
+  @include navbar-320;
 }
 @media (min-width:375px){
-  @include navbar-brand-375;
+  @include navbar-375;
 }
 @media (min-width:480px){
-  @include navbar-brand-480;
+  @include navbar-480;
 }
 @media (min-width:768px){
-  @include navbar-brand-768;
+  @include navbar-768;
 }
 @media (min-width:992px){
 

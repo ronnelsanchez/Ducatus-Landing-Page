@@ -234,6 +234,16 @@ section {
   }
 }
 
+@mixin banner-320(){
+  .banner{
+    .content{
+      .message{
+        padding-top: 0;
+      }
+    }
+  }
+};
+
 @mixin banner-480(){
   .banner{
     .content{

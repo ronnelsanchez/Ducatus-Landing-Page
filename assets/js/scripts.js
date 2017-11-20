@@ -22,6 +22,12 @@ $(function() {
     }
   });
 
+
+	$('.navbar-toggle').click(function(){
+		$(this).toggleClass('open');
+    $('#header').toggleClass('open');
+	});
+
 });
 
 window.sr = ScrollReveal();
@@ -71,6 +77,6 @@ sr.reveal('.quick-contact', {
 });
 sr.reveal('.address-contact', {
   duration: 2000,
-  origin:'right',
+  origin:'left',
   distance:'100px'
 });
